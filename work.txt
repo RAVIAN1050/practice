@@ -2,10 +2,12 @@ $ git commit --amend
 
 This command is used to amend the last commit in the current branch. The --amend option is specific to the git commit subcommand. When you use git commit --amend, Git combines your staged changes with the previous commit instead of creating a new commit. This is useful for making small changes to the most recent commit or adding files you forgot to include.
 
-$ git --git-dir=project.git repack -d
 
-This command demonstrates how you can use options for both the global Git command and the specific subcommand (repack in this case). Here, --git-dir=project.git is a global option specifying the path to the Git directory, and -d is an option specific to the git repack subcommand.
 
 --git-dir=project.git: This option tells Git to use the specified directory (project.git) as the Git directory instead of the default .git directory in the current working directory. This is useful when you want to execute Git commands in a different repository.
 repack -d: The repack command is used to repackage Git objects in a repository to reduce their size and improve performance. The -d option tells Git to perform a delta compression during the repacking process, which can save space by storing only the differences between similar objects.
 In summary, the first example shows an option specific to a particular Git subcommand (git commit), while the second example demonstrates using options for both the global Git command and a specific subcommand (git repack).
+
+$ git --git-dir=project.git repack -d
+
+This command demonstrates how you can use options for both the global Git command and the specific subcommand (repack in this case). Here, --git-dir=project.git is a global option specifying the path to the Git directory, and -d is an option specific to the git repack subcommand.
