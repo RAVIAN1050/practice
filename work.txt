@@ -8,3 +8,4 @@ This command demonstrates how you can use options for both the global Git comman
 
 --git-dir=project.git: This option tells Git to use the specified directory (project.git) as the Git directory instead of the default .git directory in the current working directory. This is useful when you want to execute Git commands in a different repository.
 repack -d: The repack command is used to repackage Git objects in a repository to reduce their size and improve performance. The -d option tells Git to perform a delta compression during the repacking process, which can save space by storing only the differences between similar objects.
+In summary, the first example shows an option specific to a particular Git subcommand (git commit), while the second example demonstrates using options for both the global Git command and a specific subcommand (git repack).
